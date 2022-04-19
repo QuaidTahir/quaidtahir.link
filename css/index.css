@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Oswold', sans-serif;
+}
+
+/* Hero Section End */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+
+#hero{
+    background-image: url("https://s3.amazonaws.com/quaidtahir.link/img/homepage.jpg");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+#hero .hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 3rem;
+    position: relative;
+    color: transparent;
+    animation: greeting_text .5s ease forwards;
+    animation-delay: 1s;
+}
+#hero h1:nth-child(1){
+    animation-delay: 1s;
+}
+#hero h1:nth-child(2){
+    animation-delay: 2s;
+}
+#hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: greeting_box 1s ease;
+    animation-delay: 0.5s;
+}
+#hero h1:nth-child(1) span{
+    animation-delay: 0.5s;
+}
+#hero h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+
+#hero .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 30px;
+    color: crimson;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    transition: .3s ease;
+    transition-property: background-color color;
+}
+#hero .cta:hover{
+    color: white;
+    background-color: crimson;
+}
+/* Hero Section End */
+
+/* Portfolio Section Start */
+.header-hover{
+    color:white;
+}
+.header-hover:hover{
+    text-decoration: underline;
+}
+.spacer{
+    padding-left: 20px;
+}
+.spacer h1{
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+    color: #022F88;
+    padding: 5px;
+}
+
+.a-link{
+    text-decoration: underline;
+    color: #022F88;
+}
+
+.github{
+    display: inline-block;
+    /* background-image: url(../images/github.png); */
+    background-image: url("https://s3.amazonaws.com/quaidtahir.link/img/github.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+.github:hover{
+    /* background-image: url('../images/githubHover.png'); */
+    background-image: url('https://s3.amazonaws.com/quaidtahir.link/img/githubHover.png');
+}
+
+#contact-info p{
+    line-height: 25px;
+    padding-right: 30px;
+}
+
+#portfolio li{
+    list-style-type: square;
+}
+
+.download-links{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.download-links p{
+    padding: 10px;
+}
+.download-links a{
+    color: black;
+    padding: 10px;
+    margin-right: 20px;
+    border: 2px solid #022F88;
+    transition: 0.5s ease;
+}
+.download-links a:hover{
+    color: white;
+    background-color: #022F88;
+}
+/* Portfolio Section End */
+
+/* About me section start */
+.music{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* About me section End */
+
+/* Keyframes */
+    @keyframes greeting_box{
+        50%{
+            width: 100%;
+            left: 0;
+        }
+        100%{
+            width: 0;
+            left: 100%;
+        }
+    }
+    @keyframes greeting_text{
+        100%{
+            color: white;
+        }
+    }
+/* End Keyframes */
+
+/* add a keyframe for each name letter "Q u a i d" as a different color after the greeting_text keyframe has taken place */
