@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/quaidtahir.link/css/index.css">
+    <link rel="shortcut icon" href="https://s3.amazonaws.com/quaidtahir.link/img/favicon-king.png" type="image/png">
+    <!-- <link href="../css/index.css" rel="stylesheet"> -->
+    <title>Quaid Tahir</title>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero container">
+            <div>
+                <h1>Hello World(); <span></span></h1>
+                <h1>This is Quaid Tahir; <span></span></h1>
+                <a href="https://www.linkedin.com/in/quaid-tahir-5a3057173/" type="button" class="cta" target="_blank">Linkedin</a>
+                <a href="#anchor-portfolio" type="button" class="cta">Portfolio</a>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Portfolio section start -->
+    <span id="anchor-portfolio"></span>
+    <div id="portfolio">
+        <div id="header-portfolio">
+            <h1 id="portfolio-title">Quaid Tahir</h1>
+
+            <div id="contact-info">
+                <p id="address"></p>
+                <p id="phone"></p>
+                <p><a href="mailto:quaidtahirw@gmail.com" id="email" class="header-hover"></a></p>
+                <p ><a href="#" id="website" class="header-hover"></a></p>
+            </div>
+        </div>
+        
+        <div class="spacer">
+        <div id="experience">
+            <h1>Experience</h1>
+            <h3>Titles</h3>
+            <a href="#" class="a-link">www.quaidtahir.link</a>
+
+            <ul>
+                <li>Utilized HTML, CSS and Javascript to develop an interactive and responsive front-end.
+                </li>
+
+                <li>Utilized Php, and JavaScript for backend.</li>
+
+                <li>Hosted the title via Amazons webservice amazonaws.</li>
+
+                <li>The title files are maintained via AWS S3.</li>
+
+                <li>The title is hosted via AWS E3.</li>
+
+                <li>
+                    GitHub <a href="https://github.com/QuaidTahir" class="github" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="education">
+            <h1 id="">Education</h1>
+                <ul>
+                    <li>
+                        <div class="edu-items">
+                            <p>Queensborough Community College</p>
+                            <p>Associate's in Computer Sciences</p>
+                            <p>2017 - 2019</p>
+                            <p>2021 - 2022</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="edu-items">
+                            <p id="grad-school"></p>
+                            <p>Bachelor's in Computer Sciences</p>
+                            <p>2022 - 2025</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="edu-items">
+                            <p id="masters-school"></p>
+                            <p>Master's in Computer Sciences</p>
+                            <p>2025 - 2026</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="edu-items">
+                            <p id="phd-school"></p>
+                            <p>Ph.D. in Computer Sciences</p>
+                            <p>2026 - 2030</p>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+
+        <div id="languages">
+            <h1>Languages</h1>
+            <ol>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Php</li>
+                <li>Javascript</li>
+                <li>CSS</li>
+                <li>HTML</li>
+            </ol>
+        </div>
+
+        <div id="FutureVentures">
+            <h1>Future Ventures</h1>
+                <ul>
+                    <li>
+                        <img src="https://s3.amazonaws.com/quaidtahir.link/img/Monarch.png" alt="Clothing Logo" width="30px" height="30px">
+                        Clothing brand lauch planned for August 14, 2022.
+                    </li>
+                </ul>
+        </div>
+
+        <div class="personality">
+            <h1>Personality</h1>
+            <p> | Disciplined | Competitive | Team-Player | Leader | </p>
+            <p> | Persistent | Virtuous | Punctual | Ambitious | </p>
+            <p> | Confident | Athletic | Public Speaker | Visionary | </p>
+        </div>
+        </div>
+
+        <div class="download-links">
+            <p>Download </p>
+            <a href="https://s3.amazonaws.com/quaidtahir.link/docs/Portfolio.pdf">Portfolio.pdf</a>
+            <a href="https://s3.amazonaws.com/quaidtahir.link/docs/Portfolio.docx">Portfolio.docx</a>
+            <!-- <a href="../docs/Portfolio.pdf">Portfolio.pdf</a> -->
+            <!-- <a href="../docs/Portfolio.docx">Portfolio.docx</a> -->
+        </div>
+    </div>
+    <!-- Portfolio section end -->
+
+    <!-- <div class="music">
+        <audio src="../docs/Kidcut-Flamingo.mp3" controls muted></audio>
+    </div> -->
+
+    <!-- Social handles start -->
+    <div class="container-socials">
+        <div class="twitter">
+            <a href="https://twitter.com/quaid_tahir" target="_blank">
+                <img src="https://s3.amazonaws.com/quaidtahir.link/img/twitter.png" alt="twitter icon">
+            </a>
+        </div>
+
+        <a href="https://www.instagram.com/quaid_tahir/" target="_blank">
+            <div class="instagram"></div>
+        </a>
+    </div>
+    <!-- Social handles end -->
+
+    <script>
+        const portfolio = {
+            name : document.getElementById('portfolio-title'),
+            address : document.getElementById('address'),
+            phone : document.getElementById('phone'),
+            email : document.getElementById('email'),
+            website : document.getElementById('website'),
+            gradSchool : document.getElementById('grad-school'),
+            masterSchool : document.getElementById('masters-school'),
+            phdSchool : document.getElementById('phd-school')
+        };
+
+        // Portfolio section elements
+        const portfolioDoc = document.getElementById('portfolio');
+        const headerPortfolio = document.getElementById('header-portfolio');
+        const educaton = document.getElementById('education');
+
+        // Portfolio initialization
+        portfolio.name.innerHTML = "Quaid Tahir";
+        portfolio.address.innerHTML = "Queens, NY, 11358";
+        portfolio.phone.innerHTML = "+1(917) 361-1201";
+        portfolio.email.innerHTML = "quaidtahirw@gmail.com";
+        portfolio.website.innerHTML = "www.quaidtahir.link";
+        portfolio.gradSchool.innerHTML = "Hunter College";
+        portfolio.masterSchool.innerHTML = "Hunter College"; 
+        portfolio.phdSchool.innerHTML = "Hunter College";
+
+        // ----------Portfolio styling start
+        portfolioDoc.style.fontFamily = "TimesNewRoman";
+        portfolioDoc.style.fontSize = "17px";
+        portfolioDoc.style.margin = "50px 100px";
+        portfolioDoc.style.padding = "20px";
+        portfolioDoc.style.border = "1px solid black";
+        portfolioDoc.style.boxShadow = "10px 7px 5px 5px gray";
+
+        // Header Styling
+        headerPortfolio.style.backgroundColor = "#022F88";
+        headerPortfolio.style.color = "white";
+        headerPortfolio.style.padding = "10px";
+        headerPortfolio.style.fontSize = "17px";
+
+        // ----------Portfolio styling End
+
+
+        // ----------About me styling start
+
+        // Audio styling
+        
+
+        // ----------About me styling end
+    </script>
+</body>
+</html>
