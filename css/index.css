@@ -119,14 +119,12 @@ a{
 
 .github{
     display: inline-block;
-    /* background-image: url(../images/github.png); */
     background-image: url("https://s3.amazonaws.com/quaidtahir.link/img/github.png");
     background-size: cover;
     width: 40px;
     height: 40px;
 }
 .github:hover{
-    /* background-image: url('../images/githubHover.png'); */
     background-image: url('https://s3.amazonaws.com/quaidtahir.link/img/githubHover.png');
 }
 
@@ -163,15 +161,27 @@ a{
 }
 /* Portfolio Section End */
 
-/* About me section start */
-.music{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
+ /* Social Handles start */
+ .container-socials{
+     display: flex;
+     justify-content: center;
+ }
+
+.twitter img:hover{
+    transition: 0.3s ease;
+    background-image: url('https://s3.amazonaws.com/quaidtahir.link/img/twitter-hover.png');
 }
 
-/* About me section End */
+.instagram{
+    background-image: url('https://s3.amazonaws.com/quaidtahir.link/img/instagram.png');
+    width: 50px;
+    height: 50px;
+    transition: 0.3s ease;
+}
+.instagram:hover{
+    background-image: url('https://s3.amazonaws.com/quaidtahir.link/img/instagram-hover.png');
+}
+ /* Social Handles end */
 
 /* Keyframes */
     @keyframes greeting_box{
